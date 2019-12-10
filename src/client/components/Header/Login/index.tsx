@@ -31,8 +31,7 @@ const Login = () => {
             )}
             header={<div>Header</div>}
             footer={<div>Footer</div>}
-            size="small"
-            className="not">
+            size="small">
         </List>
     )
 
@@ -51,14 +50,14 @@ const Login = () => {
     )
 
     return (
-        <>
-            <Dropdown overlay={notifications}>
+        <div>
+            <Dropdown overlay={notifications} className="notification">
                 <Icon type="notification"></Icon>
             </Dropdown>
             <Dropdown.Button overlay={loginMenu} icon={<Icon type="user"></Icon>}>
                 <b>Zafer Genç</b>
             </Dropdown.Button>
-        </>
+        </div>
     )
 }
 
