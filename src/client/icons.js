@@ -37,3 +37,6 @@ export {
 } from '@ant-design/icons/lib/fill/CaretDownFill';
 
 export { default as FilterFill } from '@ant-design/icons/lib/fill/FilterFill';
+export { default as UserOutline } from '@ant-design/icons/lib/outline/UserOutline';
+export { default as SettingOutline } from '@ant-design/icons/lib/outline/SettingOutline';
+export { default as MailOutline } from '@ant-design/icons/lib/outline/MailOutline';

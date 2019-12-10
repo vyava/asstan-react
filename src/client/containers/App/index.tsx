@@ -6,11 +6,8 @@ import './styles.less';
 
 const App: React.FunctionComponent = ({ children }) => {
   return (
-    <div className="zafer">
-      <Layout>
-        <Layout.Header>
-          <Header></Header>
-        </Layout.Header>
+      <Layout className="Root-Container">
+        <Header></Header>
         <Layout.Content>
           <Row>
             <Col>
@@ -20,7 +17,6 @@ const App: React.FunctionComponent = ({ children }) => {
           
         </Layout.Content>
       </Layout>
-    </div>
   );
 };
 
