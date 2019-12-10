@@ -4,9 +4,7 @@ import { RouteComponentProps } from 'react-router';
 import './styles.less';
 
 const Home: React.FunctionComponent<RouteComponentProps> = () => {
-  return (
-    <div>Home</div>
-  );
+  return <div>Home</div>;
 };
 
 export default Home;

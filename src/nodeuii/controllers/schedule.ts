@@ -16,27 +16,21 @@ const runEvery15Minute = async (): Promise<void> => {
         createRequestPromise(3)
       ]);
       const page = [...pageList[0], ...pageList[1], ...pageList[2]];
-      const newNumber = await new Promise(
-        (resolve): void => {
-          let newDataNumber = 0;
-          let i = 0;
-          page.forEach(
-            (item): void => {
-              houseModel.add(item).then(
-                (isSuccess): void => {
-                  i += 1;
-                  if (isSuccess) {
-                    newDataNumber += 1;
-                  }
-                  if (i === page.length - 1) {
-                    resolve(newDataNumber);
-                  }
-                }
-              );
+      const newNumber = await new Promise((resolve): void => {
+        let newDataNumber = 0;
+        let i = 0;
+        page.forEach((item): void => {
+          houseModel.add(item).then((isSuccess): void => {
+            i += 1;
+            if (isSuccess) {
+              newDataNumber += 1;
             }
-          );
-        }
-      );
+            if (i === page.length - 1) {
+              resolve(newDataNumber);
+            }
+          });
+        });
+      });
       logger.info(`抓取数据${page.length}条，新数据${newNumber}条。`);
     }
   );

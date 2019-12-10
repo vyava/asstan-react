@@ -65,14 +65,11 @@ const houseModel = {
       }
     }
 
-    HouseCol.create(
-      newArray,
-      (err): void => {
-        if (err) {
-          logger.error(JSON.stringify(err));
-        }
+    HouseCol.create(newArray, (err): void => {
+      if (err) {
+        logger.error(JSON.stringify(err));
       }
-    );
+    });
   },
 
   /**
@@ -81,15 +78,11 @@ const houseModel = {
    * @param {cdFang.IhouseData} item
    */
   update(item: cdFang.IhouseData): void {
-    HouseCol.findOneAndUpdate(
-      { _id: item._id },
-      item,
-      (err): void => {
-        if (err) {
-          logger.error(JSON.stringify(err));
-        }
+    HouseCol.findOneAndUpdate({ _id: item._id }, item, (err): void => {
+      if (err) {
+        logger.error(JSON.stringify(err));
       }
-    );
+    });
   },
 
   /**

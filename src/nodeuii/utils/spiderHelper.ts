@@ -12,37 +12,29 @@ interface Ipage {
 export const createRequestPromise = (
   pageNo: number
 ): Promise<cdFang.IhouseData[]> => {
-  return new Promise(
-    (resolve): void => {
-      request
-        .post(
-          `${config.spiderDomain}/lottery/accept/projectList?pageNo=${pageNo}`
-        )
-        .end(
-          (err, result): void => {
-            if (err) {
-              return;
-            }
-            const $ = cheerio.load(result.text);
-            const trList: string[][] = [];
-            $('#_projectInfo>tr').each(
-              (i, tr): void => {
-                const tdList: string[] = [];
-                $(tr)
-                  .find('td')
-                  .each(
-                    (j, td): void => {
-                      tdList.push($(td).text());
-                    }
-                  );
-                trList.push(tdList);
-              }
-            );
-            resolve(util.transformArray(trList));
-          }
-        );
-    }
-  );
+  return new Promise((resolve): void => {
+    request
+      .post(
+        `${config.spiderDomain}/lottery/accept/projectList?pageNo=${pageNo}`
+      )
+      .end((err, result): void => {
+        if (err) {
+          return;
+        }
+        const $ = cheerio.load(result.text);
+        const trList: string[][] = [];
+        $('#_projectInfo>tr').each((i, tr): void => {
+          const tdList: string[] = [];
+          $(tr)
+            .find('td')
+            .each((j, td): void => {
+              tdList.push($(td).text());
+            });
+          trList.push(tdList);
+        });
+        resolve(util.transformArray(trList));
+      });
+  });
 };
 
 const initspider = async (pageStart: number, pageEnd: number) => {
@@ -64,11 +56,9 @@ const spiderPage = async (pageNo = 1): Promise<Ipage> => {
   const page: cdFang.IhouseData[] = await createRequestPromise(pageNo);
   const promises = page.map(
     (item): Promise<cdFang.IhouseData | boolean> =>
-      new Promise(
-        (resolve): void => {
-          resolve(houseModel.add(item));
-        }
-      )
+      new Promise((resolve): void => {
+        resolve(houseModel.add(item));
+      })
   );
   const successArray = await Promise.all(promises)
     .then(

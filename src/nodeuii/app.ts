@@ -45,6 +45,5 @@ process.on('uncaughtException', err => {
   logger.error(JSON.stringify(err));
 });
 
-
 // 导出给 jest 测试
 module.exports = app.listen(config.serverPort);

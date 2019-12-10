@@ -9,11 +9,11 @@ const App = lazy(() => import('./containers/App/index'));
 
 ReactDOM.render(
   <Suspense fallback={<div>loading</div>}>
-      <BrowserRouter>
-        <App>
-          <Routes />
-        </App>
-      </BrowserRouter>
+    <BrowserRouter>
+      <App>
+        <Routes />
+      </App>
+    </BrowserRouter>
   </Suspense>,
   document.getElementById('root')
 );

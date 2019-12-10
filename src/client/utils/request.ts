@@ -5,7 +5,6 @@
 //   allHouses: cdFang.IhouseData[];
 // }
 
-
 // export function requestData(year: string, callback: Function): void {
 //   const yearParam = year === 'home' ? '0' : year;
 
