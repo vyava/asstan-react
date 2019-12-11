@@ -9,7 +9,7 @@ import Login from './Login';
 
 const Header: React.FunctionComponent<RouteComponentProps> = () => {
   return (
-    <header className="Top-Header">
+    <header className="Top_Header">
       <Logo />
       <Login />
       {/* Header */}

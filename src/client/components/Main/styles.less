@@ -1,0 +1,25 @@
+@import (reference) "../../theme/const.less";
+@import (reference) "../../theme/mixin.less";
+
+.corner {
+    .box-shadow(2px 2px 1px darken(@main-color, 10%));
+    margin-top:-2px;
+    background-color: @main-color;
+}
+
+.Main_Content {
+    margin:10px;
+    // background-color: @main-color;
+    // .box-shadow(2px 2px 1px darken(@main-color, 10%));
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 5px;
+    // padding:5px;
+
+    .Main_Content_Controller {
+        padding:5px;
+        .box-shadow(2px 2px 1px darken(@main-color, 10%));
+        background-color: @main-color;
+    };
+    
+}

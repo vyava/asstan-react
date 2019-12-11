@@ -1,17 +1,17 @@
 import * as React from 'react';
 import './styles.less';
 import { Layout, Col, Row } from 'antd';
-// import { hot } from 'react-hot-loader/root';
+import { hot } from 'react-hot-loader/root';
 import Header from '../../components/Header';
 
 
 const App: React.FunctionComponent = ({ children }) => {
   return (
-    <div className="Root-Container">
+    <Layout className="Root_Container">
       <Header />
       {children}
-    </div>
+    </Layout>
   );
 };
 
-export default App;
+export default hot(App);
