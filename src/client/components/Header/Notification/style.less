@@ -1,0 +1,21 @@
+@import "../../../theme/const.less";
+@import "../../../theme/mixin.less";
+
+.Notification_Container {
+    margin-right: 10px;
+    padding:10px;
+    background-color: lighten(@primary-dark, 70%);
+    border:1px solid #65CFB5;
+  
+    .transition(background-color 0.3s ease);
+  
+    &:hover {
+      background-color: lighten(@primary-dark, 50%);
+    }
+  
+    .border-radius(50%);
+    .Notification_Icon {
+      font-size: 17px;
+      color: #1DAB86;
+    }
+  }

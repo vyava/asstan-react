@@ -1,15 +1,15 @@
 import * as React from 'react';
+import "./styles.less";
 import { RouteComponentProps } from 'react-router';
 import { withRouter } from 'react-router-dom';
-import { Menu, Button } from 'antd';
-import './styles.less';
+
 
 import Logo from './Logo';
 import Login from './Login';
 
 const Header: React.FunctionComponent<RouteComponentProps> = () => {
   return (
-    <header>
+    <header className="Top-Header">
       <Logo />
       <Login />
       {/* Header */}

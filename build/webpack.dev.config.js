@@ -21,7 +21,17 @@ const devConfig = {
   module: {
     rules: [
       {
+        test : /\.css$/,
+        use : {
+          loader : 'style-loader',
+          options : {
+            injectType : 'styleTag'
+          }
+        }
+      },
+      {
         test: /\.less$/,
+        exclude : /node_modules/,
         use: [
           'style-loader',
           'css-loader',
