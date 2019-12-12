@@ -1,6 +1,6 @@
 import React from "react";
 import { notifications as notificationData } from "../../../../../__mocks__/db";
-import { Dropdown, List, Typography, Icon } from "antd";
+import { Dropdown, List, Typography, Icon, Badge } from "antd";
 import "./style.less";
 
 const notifications = (
@@ -21,7 +21,10 @@ const notifications = (
 const Notification = () => (
     <div className="Notification_Container">
         <Dropdown overlay={notifications}>
-            <Icon type="notification" className="Notification_Icon" />
+            <a href="#">
+                <Badge count={2}></Badge>
+                <Icon  type="notification" className="Notification_Icon" />
+            </a>
         </Dropdown>
     </div>
 );

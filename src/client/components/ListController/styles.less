@@ -1,0 +1,51 @@
+@import (reference) "../../theme/const.less";
+@import (reference) "../../theme/mixin.less";
+
+.List_Controller {
+    display: grid;
+    grid-template-columns: minmax(110px, 220px) 1fr;
+    align-items: center;
+    // transition: width 0.5ms ease;
+    padding:10px 10px;
+    background-color: @main-color;
+
+    .border-radius(8px);
+
+    .box-shadow(2px 2px 1px darken(@main-color, 10%));
+    // .primary-shadow();
+
+    .Filter_Container {
+        // background-color: @main-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .filter_location {
+            flex-grow: 2;
+            font-size:15px;
+            select {
+                min-width: 100px;
+            }
+        }
+        .filter_another1 {
+            font-size:17px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .filter_another2 {
+            flex-grow: 1;
+            text-align: center;
+        }
+    }
+    &.inputFocused {
+        grid-template-columns: minmax(150px, 250px) 1fr;
+    };
+
+    .Input_Container {
+        // input {
+        //     transition: width 0.5ms ease;
+        // }
+        
+    }
+}
