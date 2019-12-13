@@ -23,7 +23,7 @@ const Notification = () => (
         <Dropdown overlay={notifications}>
             <a href="#">
                 <Badge count={2}></Badge>
-                <Icon  type="notification" className="Notification_Icon" />
+                <Icon  type="bell" className="Notification_Icon" />
             </a>
         </Dropdown>
     </div>

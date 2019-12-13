@@ -7,8 +7,8 @@ export {
 } from '@ant-design/icons/lib/outline/SyncOutline';
 
 export {
-  default as NotificationOutline
-} from '@ant-design/icons/lib/outline/NotificationOutline';
+  default as BellOutline
+} from '@ant-design/icons/lib/outline/BellOutline';
 
 export {
   default as RightOutline
@@ -43,7 +43,4 @@ export { default as MailOutline } from '@ant-design/icons/lib/outline/MailOutlin
 export { default as SearchOutline } from '@ant-design/icons/lib/outline/SearchOutline';
 export { default as CloseSquareOutline } from '@ant-design/icons/lib/outline/CloseSquareOutline';
 export { default as UnorderedListOutline } from '@ant-design/icons/lib/outline/UnorderedListOutline';
-export { default as ArrowDownOutline } from '@ant-design/icons/lib/outline/ArrowDownOutline';
-export { default as ArrowLeftOutline } from '@ant-design/icons/lib/outline/ArrowLeftOutline';
-export { default as ArrowRightOutline } from '@ant-design/icons/lib/outline/ArrowRightOutline';
 export { default as DownOutline } from '@ant-design/icons/lib/outline/DownOutline';

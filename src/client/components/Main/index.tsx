@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.less";
 
 import List from "../List";
+import Item from "../Item";
 import ListController from "../ListController";
 
 const Main = () => {
@@ -11,6 +12,7 @@ const Main = () => {
             <main className="Main_Content">
                 <List>
                     <ListController />
+                    <Item />
                 </List>
                 <div className="Main_Content_Controller">
                     asd

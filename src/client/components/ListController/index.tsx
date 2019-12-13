@@ -7,7 +7,7 @@ let {Option} = Select;
 
 let children : any = [];
 
-["İstanbul","İzmir","Ankara"].map((e, i) => {
+["İstanbul","İzmir","Ankara", "Kahramanmaraş"].map((e, i) => {
     children.push(<Option key={i}>{e}</Option>)
 })
 
@@ -27,12 +27,15 @@ const ListController = () => {
             <div className="Filter_Container">
                 <div className="filter_location">
                     <Select
-                        allowClear
                         mode="multiple"
-                        placeholder="Konum"
-                        notFoundContent="Bulunamadı"
+                        placeholder="Konum" // Hard coded
+                        notFoundContent="Bulunamadı" // Hard coded
                         maxTagCount={1}
-                        showArrow={true}
+                        autoFocus={true}
+                        showArrow={true} // Hard coded
+                        maxTagTextLength={8}
+                        size="default"
+                        loading={false} // Hard coded
                         style={{"width" : "100%"}}>
                         {children}
                     </Select>

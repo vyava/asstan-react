@@ -3,7 +3,8 @@
 
 .List_Controller {
     display: grid;
-    grid-template-columns: minmax(110px, 220px) 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
     align-items: center;
     // transition: width 0.5ms ease;
     padding:10px 10px;
@@ -20,16 +21,20 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-
+        grid-column-start: 2;
+        grid-column-end: 3;
         .filter_location {
             flex-grow: 2;
             font-size:15px;
-            select {
-                min-width: 100px;
+            max-width: 160px;
+            .ant-select-selection__choice__content {
+                font-size:10px;
             }
         }
         .filter_another1 {
-            font-size:17px;
+
+            
+            
             flex-grow: 1;
             text-align: center;
         }
@@ -38,14 +43,25 @@
             text-align: center;
         }
     }
-    &.inputFocused {
-        grid-template-columns: minmax(150px, 250px) 1fr;
-    };
+    
 
     .Input_Container {
+        position: absolute;
+        left:10px;
+        top:10px;
+        width: 45%;
+        z-index: 10;
+        transition: width 0.2s ease;
         // input {
         //     transition: width 0.5ms ease;
         // }
         
     }
+
+    &.inputFocused {
+
+        .Input_Container {
+            width: 74%;
+        }
+    };
 }

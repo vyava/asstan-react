@@ -1,0 +1,18 @@
+@import "../../theme/const.less";
+@import "../../theme/mixin.less";
+
+.Item_Container {
+
+    padding-right:15px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    height: 100vh;
+    .Item {
+        display: block;
+        padding:5px 10px;
+        margin-top:10px;
+        background-color: @main-color;
+        .box-shadow(2px 2px 1px darken(@main-color, 10%));
+    }
+}
+

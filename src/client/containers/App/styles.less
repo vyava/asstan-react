@@ -2,11 +2,19 @@
 // @import '../../theme/common.less';
 @import (reference) "../../theme/const.less";
 
+html, body {
+  height: 100vh;
+}
+body {
+  position: relative;
+  margin: 0;
+}
+
 .Root_Container {
   display: grid;
   grid-template-columns: 30px 1fr;
   grid-template-rows: auto 1fr;
-  height: 100vh;
+  height: 100%;
   background-color: @bg-color;
   // padding-top:5px;
 }
