@@ -44,3 +44,4 @@ export { default as SearchOutline } from '@ant-design/icons/lib/outline/SearchOu
 export { default as CloseSquareOutline } from '@ant-design/icons/lib/outline/CloseSquareOutline';
 export { default as UnorderedListOutline } from '@ant-design/icons/lib/outline/UnorderedListOutline';
 export { default as DownOutline } from '@ant-design/icons/lib/outline/DownOutline';
+export { default as MoreOutline } from '@ant-design/icons/lib/outline/MoreOutline';

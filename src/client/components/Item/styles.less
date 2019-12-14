@@ -8,11 +8,63 @@
     padding-bottom: 20px;
     height: 100vh;
     .Item {
-        display: block;
-        padding:5px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        font-size: 0.9em;
+        align-items: center;
+        padding:8px 10px;
+        height:45px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // max-width: 75ch;
         margin-top:10px;
         background-color: @main-color;
+        .transition(background-color 0.07s ease);
         .box-shadow(2px 2px 1px darken(@main-color, 10%));
+
+        & b {
+            color : @text-black;
+            word-wrap: break-word;
+            max-width: 40ch;
+            overflow: hidden;
+            .text-shadow();
+        }
+
+        &:hover {
+            background-color: #211ecc;
+
+            b {
+                color: #fff;
+            };
+
+            .moreIcon {
+                color : #fff;
+            }
+        };
+        &:focus {
+            background-color: red;
+            b {
+                color : #dedede;
+            }
+            .moreIcon {
+                color : #fff;
+            }
+        }
+
+        .moreIcon {
+            // justify-self: flex-end;
+            .transition(font-size 0.1s ease);
+            color: @primary-dark;
+            font-weight: bold;
+            font-size: 17px;
+            .secondary-shadow();
+            // &:hover {
+            //     font-size:19px
+            // }
+        }
     }
 }
 
