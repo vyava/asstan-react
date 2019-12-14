@@ -1,12 +1,16 @@
-@import "../../theme/const.less";
-@import "../../theme/mixin.less";
+@import (reference) "../../theme/const.less";
+@import (reference) "../../theme/mixin.less";
+@import (reference) "../../theme/common.less";
 
 .Item_Container {
 
-    padding-right:15px;
+    padding-right:5px;
     overflow-y: auto;
-    padding-bottom: 20px;
-    height: 100vh;
+    padding-bottom: 10px;
+    height: 100%;
+    margin-top: 10px;
+    .custom-scroll();
+
     .Item {
         display: flex;
         flex-direction: row;
@@ -20,15 +24,23 @@
         overflow: hidden;
         text-overflow: ellipsis;
         // max-width: 75ch;
-        margin-top:10px;
+        margin-bottom:10px;
         background-color: @main-color;
         .transition(background-color 0.07s ease);
         .box-shadow(2px 2px 1px darken(@main-color, 10%));
+        .primary-border-radius();
+
+        border-left-width: 5px;
+        border-left-style: solid;
+        border-left-color: rgb(226, 195, 19);
+        &.active {
+            border-left-color: #000;
+        }
 
         & b {
             color : @text-black;
             word-wrap: break-word;
-            max-width: 40ch;
+            max-width: 50ch;
             overflow: hidden;
             .text-shadow();
         }

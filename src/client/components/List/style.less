@@ -4,9 +4,9 @@
 .List_Container {
     // width:40px;
     // background-color: @main-color;
-    height: 100%;
+    height: calc(~"100vh -" (@header-height - (@main-padding*2)));
     display: grid;
-    grid-template-rows: 60px 1fr;
+    // grid-template-rows: 60px 1fr;
     // padding: 5px;
     // .primary-shadow();
     // .box-shadow(2px 2px 1px darken(@main-color, 10%));

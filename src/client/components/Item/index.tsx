@@ -5,8 +5,8 @@ import { bayiList } from "../../../../__mocks__/db";
 
 const Item = () => {
 
-    let items = bayiList.map((bayi) => (
-        <a href="javascript:;" className="Item" key={bayi._id}>
+    let items = bayiList.map((bayi, i) => (
+        <a href="javascript:;" className={`Item ${(i % 2 == 0) ? "active" : "passive"}`} key={bayi._id}>
             <b>{bayi.unvan}</b>
             <Icon type="more" className="moreIcon" />
         </a>
