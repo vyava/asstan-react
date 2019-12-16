@@ -37,7 +37,7 @@ const bayiList = [
     tip: 'MARKET',
     tipDsd: '03MAR',
     adres: 'AKSARAY MAH. KÜÇÜK LANGA CAD. NO: 154 A FATİH-İSTANBUL',
-    durum: 'ONAY BEKLİYOR'
+    durum: 'FAAL'
   },
   {
     _id: '6D0555B626DD01BAE053AC1D15D9D96C',
@@ -50,7 +50,7 @@ const bayiList = [
     tip: 'MARKET',
     tipDsd: '04TEK',
     adres: 'AKSARAY MAH. KÜÇÜK LANGA CAD. NO: 154 A FATİH-İSTANBUL',
-    durum: 'ONAY BEKLİYOR'
+    durum: 'FAAL'
   },
   {
     _id: '6D0555B626DD01BAE053AC1D15D9D97C',
@@ -63,7 +63,7 @@ const bayiList = [
     tip: 'MARKET',
     tipDsd: '04TEK',
     adres: 'AKSARAY MAH. KÜÇÜK LANGA CAD. NO: 154 A FATİH-İSTANBUL',
-    durum: 'ONAY BEKLİYOR'
+    durum: 'FAAL'
   },
   {
     _id: '6D0555B626DD01BAE053AC1D15D9D98C',
@@ -89,7 +89,7 @@ const bayiList = [
     tip: 'MARKET',
     tipDsd: '04TEK',
     adres: 'AKSARAY MAH. KÜÇÜK LANGA CAD. NO: 154 A FATİH-İSTANBUL',
-    durum: 'ONAY BEKLİYOR'
+    durum: 'FAAL'
   },
   {
     _id: '6D0555B626DD01BAE053AC1D15D9D16C',
@@ -102,7 +102,7 @@ const bayiList = [
     tip: 'MARKET',
     tipDsd: '04TEK',
     adres: 'AKSARAY MAH. KÜÇÜK LANGA CAD. NO: 154 A FATİH-İSTANBUL',
-    durum: 'ONAY BEKLİYOR'
+    durum: 'TERK'
   },
   {
     _id: '6D0555B626DD01BAE053AC1D15D9D26C',
@@ -141,7 +141,7 @@ const bayiList = [
     tip: 'MARKET',
     tipDsd: '04TEK',
     adres: 'AKSARAY MAH. KÜÇÜK LANGA CAD. NO: 154 A FATİH-İSTANBUL',
-    durum: 'ONAY BEKLİYOR'
+    durum: 'TERK'
   },
   {
     _id: '6D0555B626DD01BAE0c3AC1D15D9D96C',
@@ -193,7 +193,7 @@ const bayiList = [
     tip: 'MARKET',
     tipDsd: '04TEK',
     adres: 'AKSARAY MAH. KÜÇÜK LANGA CAD. NO: 154 A FATİH-İSTANBUL',
-    durum: 'ONAY BEKLİYOR'
+    durum: 'TERK'
   },
   {
     _id: '620555B626DD01BAE0c3AC1D15D9D96C',

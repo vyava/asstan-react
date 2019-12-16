@@ -16,7 +16,7 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: nowrap;
-        font-size: 0.9em;
+        font-size: 0.7em;
         align-items: center;
         padding:8px 10px;
         height:45px;
@@ -27,56 +27,86 @@
         margin-bottom:10px;
         background-color: @main-color;
         .transition(background-color 0.07s ease);
-        .box-shadow(2px 2px 1px darken(@main-color, 10%));
+        .box-type-1();
+        // .box-shadow(2px 2px 1px darken(@main-color, 10%));
         .primary-border-radius();
 
-        border-left-width: 5px;
+        border-left-width: 2px;
         border-left-style: solid;
         border-left-color: rgb(226, 195, 19);
-        &.active {
-            border-left-color: #000;
+
+        span.location_short {
+            font-weight: bold;
+            transition: color .1s;
         }
 
-        & b {
-            color : @text-black;
-            word-wrap: break-word;
-            max-width: 50ch;
-            overflow: hidden;
-            .text-shadow();
+        .moreIcon {
+            .transition(font-size 0.1s ease);
+            color: @primary-dark;
+            font-weight: bold;
+            font-size: 17px;
         }
 
-        &:hover {
-            background-color: #211ecc;
+        .item-detail-container {
+            display: flex;
+            flex: 0 0 90%;
+            max-width: 90%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
 
             b {
-                color: #fff;
-            };
+                color : @text-black;
+                word-wrap: break-word;
+                width: 100%;
+                overflow: hidden;
+                .text-shadow();
+            }
+        }
+        /** CUSTOMER STATUS
+            faal = FAAL
+            onay = ONAY BEKLİYOR
+            terk = TERK
+        */
+        &.faal {
+            border-left-color: @list-item-color-faal;
+        }
+        &.onay {
+            border-left-color: @list-item-color-onay;
+        }
+        &.terk {
+            border-left-color: @list-item-color-terk;
+        }
+        /* ************************ */
+
+        &:hover, &:focus {
+            // background-color: @list-item-color-hover;
+            .box-type-1-active(@list-item-color-hover);
+            
+            .item-detail-container {
+                b {
+                    color: #fff;
+                };
+            }
+
+            
 
             .moreIcon {
                 color : #fff;
             }
         };
+        
         &:focus {
-            background-color: red;
-            b {
-                color : #dedede;
-            }
-            .moreIcon {
-                color : #fff;
+            span.location_short {
+                color : #7a78e0;
             }
         }
 
-        .moreIcon {
-            // justify-self: flex-end;
-            .transition(font-size 0.1s ease);
-            color: @primary-dark;
-            font-weight: bold;
-            font-size: 17px;
-            .secondary-shadow();
-            // &:hover {
-            //     font-size:19px
-            // }
-        }
+        
+
+        
+
+        
     }
 }
 
