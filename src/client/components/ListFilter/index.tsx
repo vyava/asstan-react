@@ -11,7 +11,7 @@ let children : any = [];
     children.push(<Option key={i}>{e}</Option>)
 })
 
-const ListController = () => {
+const ListFilter = () => {
 
     let [inputFocused, setInputFocused] : [boolean,any] = useState(false)
 
@@ -20,7 +20,7 @@ const ListController = () => {
     }
 
     return (
-        <div className={`List_Controller${inputFocused ? ' inputFocused' : ''}`}>
+        <div className={`List_Filter${inputFocused ? ' inputFocused' : ''}`}>
             <div className="Input_Container">
                 <Input addonBefore={<Icon type="search" />} onFocus={changeContainer} onBlur={changeContainer}></Input>
             </div>
@@ -49,4 +49,4 @@ const ListController = () => {
     )
 };
 
-export default ListController
+export default ListFilter

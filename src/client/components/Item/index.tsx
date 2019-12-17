@@ -2,31 +2,24 @@ import React from "react";
 import classNames from "classnames";
 import "./styles.less";
 import { Icon } from "antd";
-import { bayiList } from "../../../../__mocks__/db";
 
-const Item = () => {
 
-    let items = bayiList.map((bayi, i) => (
+const Item = (props: any) => {
+    return (
         <a href="javascript:;"
             className={classNames({
-                "Item" : true,
-                "faal" : (bayi.durum == 'FAAL'),
-                "terk" : (bayi.durum == 'TERK'),
-                "onay" : (bayi.durum).includes("ONAY"),
+                "Item": true,
+                "faal": (props.bayi.durum == 'FAAL'),
+                "terk": (props.bayi.durum == 'TERK'),
+                "onay": (props.bayi.durum).includes("ONAY"),
             })}
-            key={bayi._id}>
+            key={props.bayi._id}>
             <span className="item-detail-container">
-                <b>{bayi.unvan}</b>
-                <span className="location_short">{bayi.ilce}</span>
+                <b>{props.bayi.unvan}</b>
+                <span className="location_short">{props.bayi.ilce}</span>
             </span>
             <Icon type="more" className="moreIcon" />
         </a>
-    ));
-
-    return (
-        <div className="Item_Container">
-            {items}
-        </div>
     )
 }
 

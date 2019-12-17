@@ -10,10 +10,7 @@ const Main = () => {
         <>
             <div className="corner"></div>
             <main className="Main_Content">
-                <List>
-                    <ListController />
-                    <Item />
-                </List>
+                <List />
                 <div className="Main_Content_Controller">
                     asd
                 </div>
