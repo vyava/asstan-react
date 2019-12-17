@@ -22,7 +22,7 @@ const ListFilter = () => {
     return (
         <div className={`List_Filter${inputFocused ? ' inputFocused' : ''}`}>
             <div className="Input_Container">
-                <Input addonBefore={<Icon type="search" />} onFocus={changeContainer} onBlur={changeContainer}></Input>
+                <Input placeholder="Ara" onFocus={changeContainer} onBlur={changeContainer}></Input>
             </div>
             <div className="Filter_Container">
                 <div className="filter_location">

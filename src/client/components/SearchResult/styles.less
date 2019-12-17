@@ -7,23 +7,22 @@
     display: flex;
     flex-direction: row;
     padding:8px 10px;
-    border-style: dashed;
-    border-width: 2px;
+    border: 1px dashed lighten(@primary-dark, 25%);
     margin: 5px 5px 10px 5px;
-    border-color: lighten(@primary-dark, 25%);
-    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
+    font-size: .9em;
     
-    b, span {
-        font-size: .7rem;
-    }
-
     b {
         color : lighten(@primary-dark, 5%);
     };
 
     span {
         margin-left: 5px;        
+    };
+
+    span.search_result_location {
+        font-weight: bold;
+        font-style: italic;
     }
 }
