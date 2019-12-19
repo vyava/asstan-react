@@ -1,8 +1,7 @@
 import * as React from 'react';
-import "./styles.less";
+import './styles.less';
 import { RouteComponentProps } from 'react-router';
 import { withRouter } from 'react-router-dom';
-
 
 import Logo from './Logo';
 import Login from './Login';

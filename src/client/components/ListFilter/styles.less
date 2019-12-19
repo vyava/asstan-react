@@ -1,61 +1,57 @@
-@import (reference) "../../theme/const.less";
-@import (reference) "../../theme/mixin.less";
+@import (reference) '../../theme/const.less';
+@import (reference) '../../theme/mixin.less';
 
 .List_Filter {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  position: relative;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: lighten(@primary-dark, 20%);
+  border-radius: 5px;
+  .box-type-1();
+  border: none;
+  box-shadow: none;
+  border-right: none;
+  border-left: none;
+
+  .Filter_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    padding:10px 10px;
-    background-color: lighten(@primary-dark, 20%);
-    border-radius: 5px;
-    .box-type-1();
-    border: none;
-    box-shadow: none;
-    border-right: none;
-    border-left: none;
-    
-
-    .Filter_Container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        grid-column-start: 4;
-        grid-column-end: 8;
-        .filter_location {
-            flex-grow: 4;
-            font-size:15px;
-            max-width: 180px;
-            .ant-select-selection__choice__content {
-                font-size:10px;
-            }
-        }
-        .filter_another1 {
-            flex-grow: 1;
-            text-align: center;
-        }
-        .filter_another2 {
-            flex-grow: 1;
-            text-align: center;
-        }
+    grid-column-start: 4;
+    grid-column-end: 8;
+    .filter_location {
+      flex-grow: 4;
+      font-size: 15px;
+      max-width: 180px;
+      .ant-select-selection__choice__content {
+        font-size: 10px;
+      }
     }
-    
+    .filter_another1 {
+      flex-grow: 1;
+      text-align: center;
+    }
+    .filter_another2 {
+      flex-grow: 1;
+      text-align: center;
+    }
+  }
 
+  .Input_Container {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 39%;
+    z-index: 10;
+    transition: width 0.2s ease;
+  }
+
+  &.inputFocused {
     .Input_Container {
-        position: absolute;
-        left:10px;
-        top:10px;
-        width: 39%;
-        z-index: 10;
-        transition: width 0.2s ease;
-        
+      width: 76%;
     }
-
-    &.inputFocused {
-
-        .Input_Container {
-            width: 76%;
-        }
-    };
+  }
 }

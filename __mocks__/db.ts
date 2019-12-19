@@ -212,35 +212,35 @@ const bayiList = [
 
 const notifications = [
   {
-    _id : 1,
-    type : "normal",
-    image : "",
-    text : "Bu bir bildirim paneli denemesidir 1"
+    _id: 1,
+    type: 'normal',
+    image: '',
+    text: 'Bu bir bildirim paneli denemesidir 1'
   },
   {
-    _id : 2,
-    type : "normal",
-    image : "",
-    text : "Bu bir bildirim paneli denemesidir 2"
+    _id: 2,
+    type: 'normal',
+    image: '',
+    text: 'Bu bir bildirim paneli denemesidir 2'
   },
   {
-    _id : 3,
-    type : "normal",
-    image : "",
-    text : "Bu bir bildirim paneli denemesidir 3"
+    _id: 3,
+    type: 'normal',
+    image: '',
+    text: 'Bu bir bildirim paneli denemesidir 3'
   },
   {
-    _id : 4,
-    type : "normal",
-    image : "",
-    text : "Bu bir bildirim paneli denemesidir 4"
+    _id: 4,
+    type: 'normal',
+    image: '',
+    text: 'Bu bir bildirim paneli denemesidir 4'
   },
   {
-    _id : 5,
-    type : "normal",
-    image : "",
-    text : "Bu bir bildirim paneli denemesidir 5"
-  },
-]
+    _id: 5,
+    type: 'normal',
+    image: '',
+    text: 'Bu bir bildirim paneli denemesidir 5'
+  }
+];
 
 export { bayiList, notifications };

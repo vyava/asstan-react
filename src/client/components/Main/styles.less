@@ -1,26 +1,25 @@
-@import (reference) "../../theme/const.less";
-@import (reference) "../../theme/mixin.less";
+@import (reference) '../../theme/const.less';
+@import (reference) '../../theme/mixin.less';
 
 .corner {
-    .box-shadow(2px 2px 1px darken(@main-color, 10%));
-    margin-top:-2px;
-    background-color: @main-color;
+  .box-shadow(2px 2px 1px darken(@main-color, 10%));
+  margin-top: -2px;
+  background-color: @main-color;
 }
 
 .Main_Content {
-    padding:10px 10px 10px 20px;
-    margin-top: -40px;
-    // background-color: @main-color;
-    // .box-shadow(2px 2px 1px darken(@main-color, 10%));
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    gap: 20px;
+  padding: 10px 10px 10px 20px;
+  margin-top: -40px;
+  // background-color: @main-color;
+  // .box-shadow(2px 2px 1px darken(@main-color, 10%));
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 20px;
 
-    .Main_Content_Controller {
-        padding:5px;
-        // .box-shadow(2px 2px 1px darken(@main-color, 10%));
-        .box-shadow-type-1();
-        background-color: @main-color;
-    };
-    
+  .Main_Content_Controller {
+    padding: 5px;
+    // .box-shadow(2px 2px 1px darken(@main-color, 10%));
+    .box-shadow-type-1();
+    background-color: @main-color;
+  }
 }

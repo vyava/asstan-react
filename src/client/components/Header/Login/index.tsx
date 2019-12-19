@@ -1,36 +1,23 @@
 import React from 'react';
 import './styles.less';
 import { Dropdown, Menu, Button, Icon } from 'antd';
-import Notification from "../Notification";
+import Notification from '../Notification';
 
 const Login = () => {
-
   const loginMenu = (
     <Menu>
       <Menu.Item>
-        <Button
-          className="auth-buttons"
-          type="dashed"
-          icon="setting"
-        >
+        <Button className="auth-buttons" type="dashed" icon="setting">
           Hesap Ayarları
         </Button>
       </Menu.Item>
       <Menu.Item>
-        <Button
-          className="auth-buttons"
-          type="dashed"
-          icon="mail"
-        >
+        <Button className="auth-buttons" type="dashed" icon="mail">
           Mail Ayarları
         </Button>
       </Menu.Item>
       <Menu.Item>
-        <Button
-          className="auth-buttons"
-          type="dashed"
-          icon="setting"
-        >
+        <Button className="auth-buttons" type="dashed" icon="setting">
           Hesap Ayarları
         </Button>
       </Menu.Item>

@@ -1,28 +1,28 @@
-@import "../../theme/const.less";
-@import "../../theme/mixin.less";
+@import '../../theme/const.less';
+@import '../../theme/mixin.less';
 
 .Search_Result {
-    .box-type-1();
-    box-shadow: none;
-    display: flex;
-    flex-direction: row;
-    padding:8px 10px;
-    border: 1px dashed lighten(@primary-dark, 25%);
-    margin: 5px 5px 10px 5px;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: .9em;
-    
-    b {
-        color : lighten(@primary-dark, 5%);
-    };
+  .box-type-1();
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 10px;
+  border: 1px dashed lighten(@primary-dark, 25%);
+  margin: 5px 5px 10px 5px;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9em;
 
-    span {
-        margin-left: 5px;        
-    };
+  b {
+    color: lighten(@primary-dark, 5%);
+  }
 
-    span.search_result_location {
-        font-weight: bold;
-        font-style: italic;
-    }
+  span {
+    margin-left: 5px;
+  }
+
+  span.search_result_location {
+    font-weight: bold;
+    font-style: italic;
+  }
 }
