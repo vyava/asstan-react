@@ -2,8 +2,7 @@ import React from "react";
 import "./styles.less";
 
 import List from "../List";
-import Item from "../Item";
-import ListController from "../ListController";
+import Map from "../Map";
 
 const Main = () => {
     return (
@@ -12,7 +11,7 @@ const Main = () => {
             <main className="Main_Content">
                 <List />
                 <div className="Main_Content_Controller">
-                    asd
+                    <Map />
                 </div>
             </main>
         </>

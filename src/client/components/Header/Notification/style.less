@@ -2,10 +2,10 @@
 @import (reference) "../../../theme/mixin.less";
 
 .Notification_Container {
-    margin-right: 10px;
-    padding:10px;
-    background-color: lighten(@primary-dark, 70%);
-    border:1px solid #65CFB5;
+    margin-right: 20px;
+    // padding:10px;
+    // background-color: lighten(@primary-dark, 70%);
+    // border:1px solid #65CFB5;
   
     .transition(background-color 0.3s ease);
   
@@ -17,5 +17,10 @@
     .Notification_Icon {
       font-size: 17px;
       color: #1DAB86;
+    };
+
+    .Notification_Trigger i {
+      font-size: 1.2rem;
+      padding: 10px;
     }
   }

@@ -20,10 +20,12 @@ const notifications = (
 
 const Notification = () => (
     <div className="Notification_Container">
-        <Dropdown overlay={notifications}>
-            <a href="#">
-                <Badge count={2}></Badge>
-                <Icon  type="bell" className="Notification_Icon" />
+        <Dropdown trigger={["click"]} overlay={notifications}>
+            <a href="#" className="Notification_Trigger">
+                <Badge dot={true}>
+                    <Icon type="bell" className="Notification_Icon" />
+                </Badge>
+
             </a>
         </Dropdown>
     </div>
