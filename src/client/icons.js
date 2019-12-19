@@ -45,3 +45,4 @@ export { default as CloseSquareOutline } from '@ant-design/icons/lib/outline/Clo
 export { default as UnorderedListOutline } from '@ant-design/icons/lib/outline/UnorderedListOutline';
 export { default as DownOutline } from '@ant-design/icons/lib/outline/DownOutline';
 export { default as MoreOutline } from '@ant-design/icons/lib/outline/MoreOutline';
+export { default as CloseCircleOutline } from '@ant-design/icons/lib/outline/CloseCircleOutline';

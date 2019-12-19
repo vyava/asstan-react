@@ -4,10 +4,10 @@ import './styles.less';
 
 let { Option } = Select;
 
-let children: any = [];
+let cities: any = [];
 
 ['İstanbul', 'İzmir', 'Ankara', 'Kahramanmaraş'].map((e, i) => {
-  children.push(<Option key={i}>{e}</Option>);
+  cities.push(<Option key={i}>{e}</Option>);
 });
 
 const ListFilter = () => {
@@ -17,14 +17,18 @@ const ListFilter = () => {
     setInputFocused(!inputFocused);
   };
 
+  const { Search } = Input;
+
   return (
     <div className={`List_Filter${inputFocused ? ' inputFocused' : ''}`}>
       <div className="Input_Container">
-        <Input
+        <Search
           placeholder="Ara"
+          // loading={true}
+          // onChange={(e) => console.log(e.target.value)}
           onFocus={changeContainer}
           onBlur={changeContainer}
-        ></Input>
+        ></Search>
       </div>
       <div className="Filter_Container">
         <div className="filter_location">
@@ -37,10 +41,11 @@ const ListFilter = () => {
             showArrow={true} // Hard coded
             maxTagTextLength={8}
             size="default"
+            removeIcon={<Icon type="close-circle" />}
             loading={false} // Hard coded
             style={{ width: '100%' }}
           >
-            {children}
+            {cities}
           </Select>
         </div>
         <div className="filter_another1">
