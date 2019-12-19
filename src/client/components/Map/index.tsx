@@ -3,8 +3,6 @@ import MapboxMap, { GeolocateControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 const TOKEN = process.env.MAPBOX_TOKEN;
-console.log(process.env.MAPBOX_TOKEN)
-console.log(process.env)
 
 const MapContainer = () => {
 
@@ -18,7 +16,7 @@ const MapContainer = () => {
         mapStyle: 'mapbox://styles/mapbox/dark-v10?optimize=true'
     });
 
-    const geolocateStyle = {
+    const geolocateStyle : React.CSSProperties = {
         float: 'left',
         margin: '50px',
         padding: '10px'

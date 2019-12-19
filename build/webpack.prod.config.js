@@ -39,7 +39,7 @@ const prodConfig = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'cdfang-spider-[name].[hash:8].css'
+      filename: 'asstan-[name].[hash:8].css'
     }),
     new WebpackDeepScopeAnalysisPlugin(),
     // scope hosting，production 

@@ -9,7 +9,7 @@ import SearchResult from "../SearchResult";
 const List : React.FunctionComponent = ({children}) => {
 
     let bayiler = bayiList.map((bayi, i) => (
-        <Item bayi={bayi} />
+        <Item key={bayi._id} bayi={bayi} />
     ));
 
     return (

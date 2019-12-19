@@ -6,7 +6,7 @@ import { Icon } from "antd";
 
 const Item = (props: any) => {
     return (
-        <a href="javascript:;"
+        <a href="#"
             className={classNames({
                 "Item": true,
                 "faal": (props.bayi.durum == 'FAAL'),

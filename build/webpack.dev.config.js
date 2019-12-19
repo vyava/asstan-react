@@ -4,7 +4,10 @@ const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const baseConfig = require('./webpack.base.config');
-const envConfig = require('./dotenv.config');
+const Dotenv = require('dotenv-webpack');
+
+
+const ENV_PATH = path.join(__dirname, "..", ".env.development")
 
 const devConfig = {
   mode: 'development',
@@ -56,7 +59,10 @@ const devConfig = {
       favicon: './build/template/favicon.ico',
       env: process.env.NODE_ENV
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new Dotenv({
+        path: ENV_PATH
+    })
   ],
   resolve: {
     alias: {
@@ -65,4 +71,4 @@ const devConfig = {
   }
 };
 
-module.exports = merge(baseConfig, devConfig, envConfig);
+module.exports = merge(baseConfig, devConfig);
