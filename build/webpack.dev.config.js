@@ -4,6 +4,7 @@ const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const baseConfig = require('./webpack.base.config');
+const envConfig = require('./dotenv.config');
 
 const devConfig = {
   mode: 'development',
@@ -22,12 +23,15 @@ const devConfig = {
     rules: [
       {
         test : /\.css$/,
-        use : {
-          loader : 'style-loader',
-          options : {
-            injectType : 'styleTag'
-          }
-        }
+        use : [
+          {
+            loader : 'style-loader',
+            options : {
+              injectType : 'styleTag'
+            }
+          },
+          "css-loader"
+        ]
       },
       {
         test: /\.less$/,
@@ -61,4 +65,4 @@ const devConfig = {
   }
 };
 
-module.exports = merge(baseConfig, devConfig);
+module.exports = merge(baseConfig, devConfig, envConfig);
