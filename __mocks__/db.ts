@@ -243,4 +243,39 @@ const notifications = [
   }
 ];
 
-export { bayiList, notifications };
+const locationList = [
+  {
+    _id : 1,
+    name : "İSTANBUL"
+  },
+  {
+    _id : 2,
+    name : "İZMİR"
+  },
+  {
+    _id : 3,
+    name : "ANKARA"
+  },
+  {
+    _id : 4,
+    name : "KAHRAMANMARAŞ"
+  },
+  {
+    _id : 5,
+    name : "ADANA"
+  },
+]
+
+const areas = [
+  "KARTAL",
+  "TUZLA",
+  "KADIKÖY",
+  "PENDİK",
+  "ŞİŞLİ",
+  "MALTEPE",
+  "BEŞİKTAŞ",
+  "FATİH",
+  "BEYLÜKDÜZÜ"
+]
+
+export { bayiList, notifications, locationList, areas };

@@ -1,4 +1,4 @@
-// @import "./const.less";
+@import (reference) "./const.less";
 // @import "./mixin.less";
 
 .custom-scroll {
@@ -15,4 +15,12 @@
     background: #ddd;
     border-radius: 20px;
   }
+}
+
+.button_little () {
+  padding:2px 5px;
+  border: 1px dotted @primary-dark;
+  font-size: .68rem;
+  font-style: normal;
+  color: #333;
 }

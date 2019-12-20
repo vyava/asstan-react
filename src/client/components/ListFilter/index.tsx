@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-import { Input, Icon, Select } from 'antd';
+import { Input, Icon, Select, Button } from 'antd';
 import './styles.less';
+
+import { locationList } from "../../../../__mocks__/db"
+import { Divider } from 'rc-menu';
+import ButtonGroup from 'antd/lib/button/button-group';
 
 let { Option } = Select;
 
 let cities: any = [];
 
-['İstanbul', 'İzmir', 'Ankara', 'Kahramanmaraş'].map((e, i) => {
-  cities.push(<Option key={i}>{e}</Option>);
+locationList.map((city) => {
+  cities.push(<Option key={city._id}>{city.name}</Option>);
 });
 
 const ListFilter = () => {
@@ -44,14 +48,27 @@ const ListFilter = () => {
             removeIcon={<Icon type="close-circle" />}
             loading={false} // Hard coded
             style={{ width: '100%' }}
+            dropdownRender={menu => (
+              <div>
+                {/* <ButtonGroup key="Kayıtlı Liste">
+                    <Option>as</Option>
+                </ButtonGroup> */}
+
+                {menu}
+                
+                <Button type="dashed">Load more</Button>
+              </div>
+            )}
           >
             {cities}
           </Select>
         </div>
-        <div className="filter_another1">
+        <div className="Saved_Filter">
           <Icon type="unordered-list" />
         </div>
-        <div className="filter_another2">b</div>
+        <div className="Search_Container">
+          <Button size="default" type="primary">ARA</Button>
+        </div>
       </div>
     </div>
   );
