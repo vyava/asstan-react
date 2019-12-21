@@ -25,7 +25,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.tsx', '.js', '.ts', '.less', '.css'],
+    extensions: ['.tsx', '.js', '.ts', '.less', '.scss', '.sass', '.css'],
     // antd icon 
     alias: {
       '@ant-design/icons/lib/dist$': path.resolve(

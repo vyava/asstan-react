@@ -22,6 +22,18 @@ const prodConfig = {
   module: {
     rules: [
       {
+        test : /\.css$/,
+        use : [
+          {
+            loader : 'style-loader',
+            options : {
+              injectType : 'styleTag'
+            }
+          },
+          "css-loader"
+        ]
+      },
+      {
         test: /\.less$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -34,7 +46,24 @@ const prodConfig = {
             }
           }
         ]
-      }
+      },
+      {
+        test : /\.s[ac]ss$/i,
+        exclude : /node_modules/,
+        use : [
+          'style-loader',
+          'css-loader',
+          {
+            loader : 'sass-loader',
+            options : {
+              implementation : require("sass"),
+              sassOptions: {
+                fiber: false,
+              }
+            }
+          }
+        ]
+      },
     ]
   },
   plugins: [

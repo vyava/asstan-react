@@ -37,6 +37,23 @@ const devConfig = {
         ]
       },
       {
+        test : /\.s[ac]ss$/i,
+        exclude : /node_modules/,
+        use : [
+          'style-loader',
+          'css-loader',
+          {
+            loader : 'sass-loader',
+            options : {
+              implementation : require("sass"),
+              sassOptions: {
+                fiber: false,
+              }
+            }
+          }
+        ]
+      },
+      {
         test: /\.less$/,
         // exclude : /node_modules/,
         use: [
