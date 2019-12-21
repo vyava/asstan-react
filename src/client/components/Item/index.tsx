@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import './styles.less';
+import './styles';
 import { Icon } from 'antd';
 
 const Item = (props: any) => {

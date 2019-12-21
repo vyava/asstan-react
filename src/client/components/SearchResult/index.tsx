@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.less';
+import './styles';
 import { Button, Icon } from 'antd';
 import { areas } from "../../../../__mocks__/db";
 

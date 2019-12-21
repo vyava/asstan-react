@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.less';
+import './styles';
 import { Dropdown, Menu, Button, Icon } from 'antd';
 import Notification from '../Notification';
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Input, Icon, Select, Button } from 'antd';
-import './styles.less';
+import './styles';
 
 import { locationList } from "../../../../__mocks__/db"
 import { Divider } from 'rc-menu';

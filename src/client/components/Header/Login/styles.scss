@@ -1,5 +1,5 @@
-@import (reference) '../../../theme/const.less';
-@import (reference) '../../../theme/mixin.less';
+@import '../../../theme/base/const';
+@import '../../../theme/base/mixin';
 
 .auth-buttons {
   width: 100%;

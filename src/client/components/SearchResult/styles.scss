@@ -1,22 +1,22 @@
-@import (reference) '../../theme/const.less';
-@import (reference) '../../theme/mixin.less';
-@import (reference) '../../theme/common.less';
+@import '../../theme/base/const';
+@import '../../theme/base/mixin';
+@import '../../theme/base/common';
 
 .Search_Result {
-  .box-type-1();
+  @include box-type-1();
   box-shadow: none;
   display: flex;
   flex-direction: row;
   min-height: 60px;
   padding: 3px 10px;
-  border: 1px dashed lighten(@primary-dark, 25%);
+  border: 1px dashed lighten($primary-dark, 25%);
   margin: 0 5px 5px 5px;
   justify-content: space-between;
   align-items: center;
   font-size: 0.9em;
 
   b {
-    color: lighten(@primary-dark, 5%);
+    color: lighten($primary-dark, 5%);
   }
 
   span {
@@ -36,7 +36,7 @@
 
     .button_little {
       cursor: default;
-      .button_little();
+      @include button_little();
       // height: 20px;
       // padding: 0 4px;
       margin: 3px;
@@ -44,7 +44,7 @@
       font-weight: normal;
 
       .remove_icon:hover {
-        color : @primary-dark !important;
+        color : $primary-dark !important;
       }
 
       span {
@@ -63,13 +63,13 @@
       height: 100%;
       transition-delay: 0.1s;
       &:hover {
-        border-color: darken(@primary-dark, 7%);
-        color : darken(@primary-dark, 0%);
+        border-color: darken($primary-dark, 7%);
+        color : darken($primary-dark, 0%);
       }
       &:active, &:focus {
-        background-color: darken(@primary-dark, 4%);
-        border-color: darken(@primary-dark, 7%);
-        color : @main-color;
+        background-color: darken($primary-dark, 4%);
+        border-color: darken($primary-dark, 7%);
+        color : $main-color;
       }
     }
     

@@ -1,10 +1,10 @@
-@import (reference) '../../theme/const.less';
-@import (reference) '../../theme/mixin.less';
+@import '../../theme/base/const';
+@import '../../theme/base/mixin';
 
 .corner {
-  .box-shadow(2px 2px 1px darken(@main-color, 10%));
+  @include box-shadow(2px 2px 1px darken($main-color, 10%));
   margin-top: -2px;
-  background-color: @main-color;
+  background-color: $main-color;
 }
 
 .Main_Content {
@@ -19,7 +19,7 @@
   .Main_Content_Controller {
     padding: 5px;
     // .box-shadow(2px 2px 1px darken(@main-color, 10%));
-    .box-shadow-type-1();
-    background-color: @main-color;
+    @include box-shadow-type-1();
+    background-color: $main-color;
   }
 }

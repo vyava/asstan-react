@@ -1,5 +1,5 @@
-@import (reference) '../../theme/const.less';
-@import (reference) '../../theme/mixin.less';
+@import '../../theme/base/const';
+@import '../../theme/base/mixin';
 
 .List_Filter {
   display: grid;
@@ -7,9 +7,9 @@
   position: relative;
   align-items: center;
   padding: 10px 10px;
-  background-color: lighten(@primary-dark, 20%);
+  background-color: lighten($primary-dark, 20%);
   border-radius: 5px;
-  .box-type-1();
+  @include box-type-1();
   border: none;
   box-shadow: none;
   border-right: none;

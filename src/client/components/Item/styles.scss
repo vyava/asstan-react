@@ -1,6 +1,6 @@
-@import (reference) '../../theme/const.less';
-@import (reference) '../../theme/mixin.less';
-@import (reference) '../../theme/common.less';
+@import '../../theme/base/const';
+@import '../../theme/base/mixin';
+@import '../../theme/base/common';
 
 .Item_Container {
   padding-right: 5px;
@@ -8,7 +8,7 @@
   padding-bottom: 10px;
   height: 100%;
   margin-top: 10px;
-  .custom-scroll();
+  @include custom-scroll();
 
   .Item {
     display: flex;
@@ -24,11 +24,11 @@
     text-overflow: ellipsis;
     // max-width: 75ch;
     margin-bottom: 2px;
-    background-color: @main-color;
-    .transition(background-color 0.07s ease);
-    .box-type-1();
+    background-color: $main-color;
+    @include transition(background-color 0.07s ease);
+    @include box-type-1();
     // .box-shadow(2px 2px 1px darken(@main-color, 10%));
-    .primary-border-radius();
+    @include primary-border-radius();
 
     border-left-width: 2px;
     border-left-style: solid;
@@ -40,8 +40,8 @@
     }
 
     .moreIcon {
-      .transition(font-size 0.1s ease);
-      color: @primary-dark;
+      @include transition(font-size 0.1s ease);
+      color: $primary-dark;
       font-weight: bold;
       font-size: 17px;
     }
@@ -55,11 +55,11 @@
       align-items: flex-start;
 
       b {
-        color: @text-black;
+        color: $text-black;
         word-wrap: break-word;
         width: 100%;
         overflow: hidden;
-        .text-shadow();
+        @include text-shadow();
       }
     }
     /** CUSTOMER STATUS
@@ -68,20 +68,20 @@
             terk = TERK
         */
     &.faal {
-      border-left-color: @list-item-color-faal;
+      border-left-color: $list-item-color-faal;
     }
     &.onay {
-      border-left-color: @list-item-color-onay;
+      border-left-color: $list-item-color-onay;
     }
     &.terk {
-      border-left-color: @list-item-color-terk;
+      border-left-color: $list-item-color-terk;
     }
     /* ************************ */
 
     &:hover,
     &:focus {
       // background-color: @list-item-color-hover;
-      .box-type-1-active(@list-item-color-hover);
+      @include box-type-1-active($list-item-color-hover);
 
       .item-detail-container {
         b {

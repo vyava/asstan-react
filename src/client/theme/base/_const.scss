@@ -1,0 +1,24 @@
+$bg-color: #f6f5fa;
+$main-color: #fff;
+$title-color: #1890ff;
+$primary-dark: #1dab86;
+$secondary-light: #ffb303;
+$secondary-dark: #ec3751;
+
+// .onay {
+//     border : 1px solid lighten()
+// }
+
+$primary-light: #f2f2f2;
+$text-black: #000;
+
+$header-height: 60px;
+$main-padding: 10px;
+
+$corner-width: 15px;
+
+$list-item-color-hover: #211ecc;
+
+$list-item-color-faal: lighten($primary-dark, 10%);
+$list-item-color-onay: lighten($secondary-light, 20%);
+$list-item-color-terk: $secondary-dark;

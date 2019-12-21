@@ -1,6 +1,6 @@
-@import '../../../../node_modules/antd/dist/antd.less';
+@import '../../../../node_modules/antd/dist/antd.css';
 // @import '../../theme/common.less';
-@import (reference) '../../theme/const.less';
+@import '../../theme/base/const';
 
 html,
 body {
@@ -18,9 +18,9 @@ body {
 
 .Root_Container {
   display: grid;
-  grid-template-columns: @corner-width 1fr;
-  grid-template-rows: @header-height 1fr;
+  grid-template-columns: $corner-width 1fr;
+  grid-template-rows: $header-height 1fr;
   height: 100%;
-  background-color: @bg-color;
+  background-color: $bg-color;
   // padding-top:5px;
 }

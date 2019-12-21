@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './styles.less';
+import './styles';
 import { RouteComponentProps } from 'react-router';
 import Aside from '../../components/Aside';
 import Main from '../../components/Main';

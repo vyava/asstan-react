@@ -1,0 +1,11 @@
+@import '../../theme/base/const';
+@import '../../theme/base/mixin';
+
+.Navbar_Container {
+  // width:40px;
+  background-color: $main-color;
+  height: 100%;
+  padding: 5px;
+  @include primary-shadow();
+  @include box-shadow(2px 2px 1px darken($main-color, 10%));
+}

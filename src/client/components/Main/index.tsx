@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.less';
+import './styles';
 
 import List from '../List';
 import Map from '../Map';

@@ -1,5 +1,5 @@
-@import (reference) '../../../theme/const.less';
-@import (reference) '../../../theme/mixin.less';
+@import '../../../theme/base/const';
+@import '../../../theme/base/mixin';
 
 .Notification_Container {
   margin-right: 20px;
@@ -7,13 +7,13 @@
   // background-color: lighten(@primary-dark, 70%);
   // border:1px solid #65CFB5;
 
-  .transition(background-color 0.3s ease);
+  @include transition(background-color 0.3s ease);
 
   &:hover {
-    background-color: lighten(@primary-dark, 50%);
+    background-color: lighten($primary-dark, 50%);
   }
 
-  .border-radius(50%);
+  @include border-radius(50%);
   .Notification_Icon {
     font-size: 17px;
     color: #1dab86;
