@@ -1,6 +1,6 @@
-@import '../../theme/base/const';
-@import '../../theme/base/mixin';
-@import '../../theme/base/common';
+@import '../../../theme/base/const';
+@import '../../../theme/base/mixin';
+@import '../../../theme/base/common';
 
 .Search_Result {
   @include box-type-1();

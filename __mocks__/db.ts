@@ -1,4 +1,7 @@
-const bayiList = [
+import { IBayi } from "../src/client/interface/Bayi";
+
+
+const bayiList: IBayi[] = [
   {
     _id: '6D0555B626DD01BAE053AC1D15D9D93C',
     il: 'İSTANBUL',
@@ -245,24 +248,24 @@ const notifications = [
 
 const locationList = [
   {
-    _id : 1,
-    name : "İSTANBUL"
+    _id: 1,
+    name: "İSTANBUL"
   },
   {
-    _id : 2,
-    name : "İZMİR"
+    _id: 2,
+    name: "İZMİR"
   },
   {
-    _id : 3,
-    name : "ANKARA"
+    _id: 3,
+    name: "ANKARA"
   },
   {
-    _id : 4,
-    name : "KAHRAMANMARAŞ"
+    _id: 4,
+    name: "KAHRAMANMARAŞ"
   },
   {
-    _id : 5,
-    name : "ADANA"
+    _id: 5,
+    name: "ADANA"
   },
 ]
 

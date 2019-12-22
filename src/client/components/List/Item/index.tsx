@@ -2,8 +2,13 @@ import React from 'react';
 import classNames from 'classnames';
 import './styles';
 import { Icon } from 'antd';
+import { IBayi } from '../../../interface/Bayi';
 
-const Item = (props: any) => {
+interface IItemProps {
+  bayi: IBayi;
+}
+
+const Item = (props: IItemProps) => {
   return (
     <a
       href="#"
@@ -13,7 +18,6 @@ const Item = (props: any) => {
         terk: props.bayi.durum == 'TERK',
         onay: props.bayi.durum.includes('ONAY')
       })}
-      key={props.bayi._id}
     >
       <span className="item-detail-container">
         <b>{props.bayi.unvan}</b>

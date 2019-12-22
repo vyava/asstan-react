@@ -1,23 +1,24 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import './style';
-import ListFilter from '../ListFilter';
-import Item from '../Item';
+import ListFilter from './ListFilter';
+import SearchResult from './SearchResult';
+import Item from './Item';
 
-import { bayiList } from '../../../../__mocks__/db';
-import SearchResult from '../SearchResult';
+interface IListProps {
+  children : ReactNode;
+}
 
-const List: React.FunctionComponent = ({ children }) => {
-  let bayiler = bayiList.map((bayi, i) => <Item key={bayi._id} bayi={bayi} />);
+const List = ({children} : IListProps) => {
 
   return (
     <div className="List_Container">
-      <div className="List_Controller">
-        <ListFilter />
-        <SearchResult />
-      </div>
-      <div className="Item_Container">{bayiler}</div>
+      {children}
     </div>
   );
 };
+
+List.Item = Item;
+List.ListFilter = ListFilter;
+List.SearchResult = SearchResult;
 
 export default List;

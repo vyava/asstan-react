@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles';
 import { Button, Icon } from 'antd';
-import { areas } from "../../../../__mocks__/db";
+import { areas } from "../../../../../__mocks__/db";
 
 
 const _areas = areas.map((area, i) => (
