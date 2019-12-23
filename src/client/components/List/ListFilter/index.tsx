@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Input, Icon, Select, Button } from 'antd';
+import { Input, Icon, Select, Button, Tooltip } from 'antd';
 import './styles';
 
 import { locationList } from "../../../../../__mocks__/db"
@@ -62,7 +62,9 @@ const ListFilter = () => {
           </Select>
         </div>
         <div className="Saved_Filter">
-          <Icon type="unordered-list" />
+          <Tooltip title="Kayıtlı Filtreler">
+            <Icon type="unordered-list" />
+          </Tooltip>
         </div>
         <div className="Search_Container">
           <Button size="default" type="primary">ARA</Button>
