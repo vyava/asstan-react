@@ -1,0 +1,7 @@
+@import "./const";
+
+.fa-custom-icon {
+    &:hover {
+        color: $primary-dark;
+    }
+}

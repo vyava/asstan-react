@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { Input, Icon, Select, Button, Tooltip } from 'antd';
 import './styles';
 
-import { locationList } from "../../../../../__mocks__/db"
+import { locationList } from "../../../../../__mocks__/db";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearchLocation, faThList, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 let { Option } = Select;
 
@@ -40,10 +43,10 @@ const ListFilter = () => {
             notFoundContent="Bulunamadı" // Hard coded
             maxTagCount={1}
             autoFocus={true}
-            showArrow={true} // Hard coded
+            showArrow={false} // Hard coded
             maxTagTextLength={8}
             size="default"
-            removeIcon={<Icon type="close-circle" />}
+            // removeIcon={}
             loading={false} // Hard coded
             style={{ width: '100%' }}
             dropdownRender={menu => (
@@ -63,11 +66,11 @@ const ListFilter = () => {
         </div>
         <div className="Saved_Filter">
           <Tooltip title="Kayıtlı Filtreler">
-            <Icon type="unordered-list" />
+            <FontAwesomeIcon icon={faThList} className="fa-custom-icon" size="1x" />  
           </Tooltip>
         </div>
         <div className="Search_Container">
-          <Button size="default" type="primary">ARA</Button>
+          <FontAwesomeIcon icon={faSearchLocation} className="fa-custom-icon" size="lg" />
         </div>
       </div>
     </div>

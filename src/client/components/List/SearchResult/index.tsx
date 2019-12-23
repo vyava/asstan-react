@@ -3,10 +3,12 @@ import './styles';
 import { Button, Icon } from 'antd';
 import { areas } from "../../../../../__mocks__/db";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 
 const _areas = areas.map((area, i) => (
             <a key={i} className="button_little">
-                <Icon className="remove_icon" type="close-circle" />
+                <FontAwesomeIcon icon={faMinusCircle} className="fa-custom-icon" size="1x" onClick={() => (true)}/>
                 <span>{area}</span>
             </a>))
 

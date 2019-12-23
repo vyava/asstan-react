@@ -1,7 +1,10 @@
 import React from 'react';
 import { notifications as notificationData } from '../../../../../__mocks__/db';
-import { Dropdown, List, Typography, Icon, Badge } from 'antd';
+import { Dropdown, List, Typography, Badge } from 'antd';
 import './style';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 const notifications = (
   <List
@@ -23,7 +26,7 @@ const Notification = () => (
     <Dropdown trigger={['click']} overlay={notifications}>
       <a href="#" className="Notification_Trigger">
         <Badge dot={true}>
-          <Icon type="bell" className="Notification_Icon" />
+          <FontAwesomeIcon icon={faBell} className="fa-custom-icon" size="lg" />
         </Badge>
       </a>
     </Dropdown>
