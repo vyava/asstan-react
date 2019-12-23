@@ -22,11 +22,6 @@
     "coverage": "codecov",
     "commit": "npx git-cz"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier"
-    }
-  },
   "browserslist": {
     "production": [
       ">0.2%",
