@@ -47,6 +47,10 @@
   "homepage": "https://github.com/lmjben/cdfang-spider#readme",
   "dependencies": {
     "@antv/data-set": "^0.10.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "antd": "^3.24.1",
     "apollo-boost": "^0.4.4",
     "apollo-server-koa": "^2.9.6",
