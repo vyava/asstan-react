@@ -9,3 +9,4 @@ package-lock.json
 logs
 __test__
 .env
+.env.development
