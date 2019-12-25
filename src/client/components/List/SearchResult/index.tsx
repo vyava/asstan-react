@@ -8,7 +8,7 @@ import { faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 
 const _areas = areas.map((area, i) => (
             <a key={i} className="button_little">
-                <FontAwesomeIcon icon={faMinusCircle} className="fa-custom-icon" size="1x" onClick={() => (true)}/>
+                <FontAwesomeIcon icon={faMinusCircle} className="astn-btn fa-custom-icon" size="1x" onClick={() => (true)}/>
                 <span>{area}</span>
             </a>))
 

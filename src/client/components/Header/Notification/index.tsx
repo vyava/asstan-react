@@ -26,7 +26,7 @@ const Notification = () => (
     <Dropdown trigger={['click']} overlay={notifications}>
       <a href="#" className="Notification_Trigger">
         <Badge dot={true}>
-          <FontAwesomeIcon icon={faBell} className="fa-custom-icon" size="lg" />
+          <FontAwesomeIcon icon={faBell} className="astn-btn fa-custom-icon" size="lg" />
         </Badge>
       </a>
     </Dropdown>

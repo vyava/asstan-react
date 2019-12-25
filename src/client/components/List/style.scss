@@ -4,7 +4,7 @@
 .List_Container {
   // margin-top: -40px;
   // height: calc(~"100vh -" (@header-height - (@main-padding*2)));
-  height: calc(100vh - (#{$header-height} + #{$main-padding}));
+  height: calc(100vh - (#{$header-height} - #{$main-padding}));
   display: grid;
 
   .List_Controller {

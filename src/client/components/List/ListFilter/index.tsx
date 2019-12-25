@@ -66,11 +66,11 @@ const ListFilter = () => {
         </div>
         <div className="Saved_Filter">
           <Tooltip title="Kayıtlı Filtreler">
-            <FontAwesomeIcon icon={faThList} className="fa-custom-icon" size="1x" />  
+            <FontAwesomeIcon icon={faThList} className="astn-btn fa-custom-icon" size="1x" />  
           </Tooltip>
         </div>
         <div className="Search_Container">
-          <FontAwesomeIcon icon={faSearchLocation} className="fa-custom-icon" size="lg" />
+          <FontAwesomeIcon icon={faSearchLocation} className="astn-btn fa-custom-icon" size="lg" />
         </div>
       </div>
     </div>
