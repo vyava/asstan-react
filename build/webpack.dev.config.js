@@ -7,7 +7,7 @@ const baseConfig = require('./webpack.base.config');
 const Dotenv = require('dotenv-webpack');
 
 
-const ENV_PATH = path.join(__dirname, "..", ".env.development")
+const ENV_PATH = path.join(__dirname, "..", ".env")
 
 const devConfig = {
   mode: 'development',
