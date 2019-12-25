@@ -13,7 +13,7 @@ module.exports = {
   extends: [
     "eslint-config-airbnb",
     "plugin:@typescript-eslint/recommended",
-    // 关闭可能与 prettier 有冲突的规则
+    // prettier 
     "prettier",
     "prettier/@typescript-eslint",
   ],
@@ -23,7 +23,7 @@ module.exports = {
     "react/jsx-props-no-spreading": 0,
     "@typescript-eslint/ban-ts-ignore":0
   },
-  // 解决不能直接默认导入 ts 文件 的问题。import/no-unresolved
+  // ts import/no-unresolved
   settings: {
     "import/resolver": {
       "webpack": {
