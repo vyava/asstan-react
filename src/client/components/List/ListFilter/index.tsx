@@ -5,7 +5,7 @@ import './styles';
 import { locationList } from "../../../../../__mocks__/db";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearchLocation, faThList, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faThList, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 let { Option } = Select;
 
@@ -70,7 +70,7 @@ const ListFilter = () => {
           </Tooltip>
         </div>
         <div className="Search_Container">
-          <FontAwesomeIcon icon={faSearchLocation} className="astn-btn fa-custom-icon" size="lg" />
+          <FontAwesomeIcon icon={faSearch} className="astn-btn fa-custom-icon" size="lg" />
         </div>
       </div>
     </div>

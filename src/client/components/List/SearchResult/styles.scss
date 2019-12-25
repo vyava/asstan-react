@@ -58,19 +58,22 @@
     align-self: stretch;
 
     button {
-      // background-color: @primary-dark;
-      // border-color: darken(@primary-dark, 3%);
+      border:none;
+      background-color: $main-color;
+      border-color: $primary-dark;
+      border-width: 1px;
+      border: 1px solid $primary-dark;
       height: 100%;
-      transition-delay: 0.1s;
+      padding: 0 9px;
       &:hover {
-        border-color: darken($primary-dark, 7%);
-        color : darken($primary-dark, 0%);
+        background-color: $primary-dark;
+        color : #fff;
       }
-      &:active, &:focus {
-        background-color: darken($primary-dark, 4%);
-        border-color: darken($primary-dark, 7%);
-        color : $main-color;
-      }
+      // &:active, &:focus {
+      //   background-color: darken($primary-dark, 4%);
+      //   border-color: darken($primary-dark, 7%);
+      //   color : $main-color;
+      // }
     }
     
   }

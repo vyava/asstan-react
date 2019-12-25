@@ -1,16 +1,16 @@
 import React from 'react';
 import './styles';
-import { Button, Icon } from 'antd';
 import { areas } from "../../../../../__mocks__/db";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinusCircle } from "@fortawesome/free-solid-svg-icons";
+import { faMinusCircle, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { Tooltip } from 'antd';
 
 const _areas = areas.map((area, i) => (
-            <a key={i} className="button_little">
-                <FontAwesomeIcon icon={faMinusCircle} className="astn-btn fa-custom-icon" size="1x" onClick={() => (true)}/>
-                <span>{area}</span>
-            </a>))
+  <a key={i} className="button_little">
+    <FontAwesomeIcon icon={faMinusCircle} className="astn-btn fa-custom-icon" size="1x" onClick={() => (true)} />
+    <span>{area}</span>
+  </a>))
 
 
 
@@ -24,7 +24,13 @@ const SearchResult = () => {
       <span className="search_result_location">
         {_areas}
       </span>
-      <span className="search_result_location_edit"><Button size="default" type="dashed" icon="more" /></span>
+      <span className="search_result_location_edit">
+        <Tooltip title="Daha Fazla" placement="right">
+          <button className="astn-btn">
+            <FontAwesomeIcon icon={faPlus} className="fa-custom-icon" size="1x" />
+          </button>
+        </Tooltip>
+      </span>
     </div>
   );
 };
