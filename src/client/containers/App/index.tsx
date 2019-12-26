@@ -1,4 +1,5 @@
 import * as React from 'react';
+import "antd/dist/antd.less";
 import './styles';
 import { Layout, Col, Row } from 'antd';
 import { hot } from 'react-hot-loader/root';
