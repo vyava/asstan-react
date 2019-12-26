@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import './styles';
-
-import SearchResultDetail from "./SearchResultDetail";
-
 import { areas, ilceDetay } from "../../../../../__mocks__/db";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinusCircle, faPlus } from "@fortawesome/free-solid-svg-icons";
+
+import ModalBox from "../../Modal";
+import SearchResultDetail from "./SearchResultDetail";
+
+
 import { Tooltip } from 'antd';
 
 const _areas = areas.map((area, i) => (
@@ -33,13 +34,15 @@ const SearchResult = () => {
         </span>
         <span className="search_result_location_edit">
           <Tooltip title="Daha Fazla" placement="right">
-            <button className="astn-btn">
+            <button className="astn-btn" onClick={() => setModalVisible(true)}>
               <FontAwesomeIcon icon={faPlus} className="fa-custom-icon" size="1x" />
             </button>
           </Tooltip>
         </span>
       </div>
-
+      <ModalBox isVisible={isModalVisible} setModalVisible={setModalVisible}>
+        <SearchResultDetail dataSource={ilceDetay} targetKeys={[]} />
+      </ModalBox>
       {/* <SearchResultDetail dataSource={ilceDetay} targetKeys={[]} /> */}
     </>
   );
