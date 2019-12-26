@@ -35,7 +35,12 @@ module.exports = {
     }
   },
   externals: {
-    lodash: '_',
+    lodash: {
+      commonjs  : 'lodash',
+      commonjs2 : 'lodash',
+      amd       : 'lodash',
+      root      : '_'
+    },
     react: 'React'
   }
 };

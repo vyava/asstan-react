@@ -13,7 +13,9 @@ const devConfig = {
   mode: 'development',
   output: {
     path: path.resolve('./dist/client'),
-    filename: '[name].js'
+    filename: '[name].js',
+    globalObject : 'this',
+    libraryTarget : 'umd'
   },
   devServer: {
     hot: true,
