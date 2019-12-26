@@ -1,5 +1,7 @@
 import React from "react";
 import { Transfer, Tree } from "antd";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMinusCircle, faCaretSquareDown } from "@fortawesome/free-solid-svg-icons";
 
 const { TreeNode } = Tree;
 
@@ -36,6 +38,7 @@ const SearchResultDetail = ({ dataSource, targetKeys } : any) => {
                             checkStrictly
                             // defaultExpandAll
                             checkedKeys={checkedKeys}
+                            switcherIcon={<FontAwesomeIcon icon={faCaretSquareDown} />}
                             onCheck={(
                                 _,
                                 {
