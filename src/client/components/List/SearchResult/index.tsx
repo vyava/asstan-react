@@ -7,7 +7,7 @@ import { areas, ilceDetay } from "../../../../../__mocks__/db";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinusCircle, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { Tooltip, Modal } from 'antd';
+import { Tooltip } from 'antd';
 
 const _areas = areas.map((area, i) => (
   <a key={i} className="button_little">
@@ -40,19 +40,9 @@ const SearchResult = () => {
         </span>
       </div>
 
-      <Modal
-        visible={isModalVisible}
-        // title="Modal Title"
-        okText="Kaydet"
-        cancelText="Kapat"
-
-      >
-          <SearchResultDetail dataSource={ilceDetay} targetKeys={[]} />
-      </Modal>
+      {/* <SearchResultDetail dataSource={ilceDetay} targetKeys={[]} /> */}
     </>
   );
 };
-
-// SearchResult.SearchResultDetail = SearchResultDetail;
 
 export default SearchResult;
