@@ -1,3 +1,4 @@
+import _ from "lodash";
 import { IBayi } from "../src/client/interface/Bayi";
 
 
@@ -279,6 +280,46 @@ const areas = [
   "BEŞİKTAŞ",
   "FATİH",
   "BEYLÜKDÜZÜ"
+];
+
+const ilceDetay = [
+  {
+    key : "34",
+    title : "İSTANBUL",
+    children : [
+      {
+        key : "kartal",
+        title : "KARTAL"
+      },
+      {
+        key : "maltepe",
+        title : "MALTEPE"
+      },
+      {
+        key : "kadikoy",
+        title : "KADIKÖY"
+      },
+      {
+        key : "pendik",
+        title : "PENDİK"
+      },
+    ]
+  },
+  {
+    key : "41",
+    title : "KOCAELİ",
+    children : [
+      {
+        key : "darica",
+        title : "DARICA"
+      },
+      {
+        key : "gebze",
+        title : "GEBZE"
+      },
+    ]
+  },
 ]
 
-export { bayiList, notifications, locationList, areas };
+
+export { bayiList, notifications, locationList, areas, ilceDetay };
