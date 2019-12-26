@@ -19,6 +19,12 @@ $corner-width: 15px;
 
 $list-item-color-hover: #211ecc;
 
-$list-item-color-faal: lighten($primary-dark, 10%);
+$list-item-color-faal: $primary-dark;
 $list-item-color-onay: lighten($secondary-light, 20%);
 $list-item-color-terk: $secondary-dark;
+
+
+/*********** BORDER ********** */
+$primary-border-color : $primary-dark;
+$primary-border-style : solid;
+$primary-border-width : 1px;

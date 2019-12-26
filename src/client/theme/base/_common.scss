@@ -1,6 +1,7 @@
 @import "./const";
-// @import "./mixin.less";
+@import "./mixin";
 
+/************ SCROLL *********** */
 @mixin custom-scroll {
   &::-webkit-scrollbar {
     width: 10px;
@@ -19,11 +20,12 @@
 
 @mixin button_little {
   padding:2px 5px;
-  border: 1px dotted $primary-dark;
+  @include primary-border();
+  border-style: dotted;
+  border-width: 1px;
   font-size: .68rem;
   font-style: normal;
   color: #333;
-  @extend .astn-btn;
 
   &:hover {
     border-style: solid;
@@ -34,4 +36,8 @@
 .astn-btn {
   transition: all .3s ease;
   border-radius: 3px;
+
+  &:hover {
+    color: $primary-dark;
+  }
 }

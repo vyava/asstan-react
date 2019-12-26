@@ -10,8 +10,8 @@
   .List_Controller {
     margin: 0 1px;
     background-color: $main-color;
-    border: 1px solid $primary-dark;
-    border-top: 15px solid $primary-dark;
+    @include primary-border();
+    border-top-width: 15px !important;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     @include box-shadow-type-1(lighten($primary-dark, 50%));
