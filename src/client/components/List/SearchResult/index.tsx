@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './styles';
-import { areas } from "../../../../../__mocks__/db";
+
+import SearchResultDetail from "./SearchResultDetail";
+
+import { areas, ilceDetay } from "../../../../../__mocks__/db";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinusCircle, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { Tooltip } from 'antd';
+import { Tooltip, Modal } from 'antd';
 
 const _areas = areas.map((area, i) => (
   <a key={i} className="button_little">
@@ -15,24 +18,41 @@ const _areas = areas.map((area, i) => (
 
 
 const SearchResult = () => {
+
+  let [isModalVisible, setModalVisible] = useState(false);
+
   return (
-    <div className="Search_Result">
-      <div className="result_count">
-        <b>147 Sonuç</b>
+    <>
+      <div className="Search_Result">
+        <div className="result_count">
+          <b>147 Sonuç</b>
+        </div>
+
+        <span className="search_result_location">
+          {_areas}
+        </span>
+        <span className="search_result_location_edit">
+          <Tooltip title="Daha Fazla" placement="right">
+            <button className="astn-btn">
+              <FontAwesomeIcon icon={faPlus} className="fa-custom-icon" size="1x" />
+            </button>
+          </Tooltip>
+        </span>
       </div>
 
-      <span className="search_result_location">
-        {_areas}
-      </span>
-      <span className="search_result_location_edit">
-        <Tooltip title="Daha Fazla" placement="right">
-          <button className="astn-btn">
-            <FontAwesomeIcon icon={faPlus} className="fa-custom-icon" size="1x" />
-          </button>
-        </Tooltip>
-      </span>
-    </div>
+      <Modal
+        visible={isModalVisible}
+        // title="Modal Title"
+        okText="Kaydet"
+        cancelText="Kapat"
+
+      >
+          <SearchResultDetail dataSource={ilceDetay} targetKeys={[]} />
+      </Modal>
+    </>
   );
 };
+
+// SearchResult.SearchResultDetail = SearchResultDetail;
 
 export default SearchResult;
