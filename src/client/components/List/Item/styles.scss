@@ -11,8 +11,7 @@
   @include custom-scroll();
 
   &.loading .ant-collapse{
-    padding: 0 10px;
-    overflow: hidden;
+    display: none;
   }
 
   & .ant-collapse-item div.ant-collapse-header {
