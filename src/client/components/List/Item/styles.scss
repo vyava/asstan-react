@@ -10,6 +10,11 @@
   margin-top: 10px;
   @include custom-scroll();
 
+  &.loading .ant-collapse{
+    padding: 0 10px;
+    overflow: hidden;
+  }
+
   & .ant-collapse-item div.ant-collapse-header {
     padding:0;
     line-height: initial;
