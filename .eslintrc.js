@@ -11,7 +11,7 @@ module.exports = {
     project: "./tsconfig.json",
   },
   extends: [
-    "eslint-config-airbnb",
+    "standard",
     "plugin:@typescript-eslint/recommended",
     // prettier 
     "prettier",
