@@ -31,7 +31,8 @@ module.exports = {
       '@ant-design/icons/lib/dist$': path.resolve(
         __dirname,
         '../src/client/icons.js'
-      )
+      ),
+      '@' : path.resolve(__dirname, '../src/client')
     }
   },
   externals: {
