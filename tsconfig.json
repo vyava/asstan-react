@@ -1,7 +1,10 @@
 // https://www.tslang.cn/docs/handbook/compiler-options.html
 {
   "compilerOptions": {
-    "paths": { "*": ["types/*"] },
+    "paths": {
+      "*": ["types/*"],
+      "@/*" : ["./src/client/*"]
+    },
     "baseUrl": ".",
     "strict": true,
     "strictNullChecks": true,
