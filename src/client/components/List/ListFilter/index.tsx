@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Input, Icon, Select, Button, Tooltip } from 'antd';
+import { Input, Select, Button, Tooltip, Popover } from 'antd';
 import './styles';
 
 import { locationList } from "../../../../../__mocks__/db";
@@ -56,7 +56,7 @@ const ListFilter = () => {
                 </ButtonGroup> */}
 
                 {menu}
-                
+
                 <Button type="dashed">Load more</Button>
               </div>
             )}
@@ -65,9 +65,14 @@ const ListFilter = () => {
           </Select>
         </div>
         <div className="Saved_Filter">
-          <Tooltip title="Kayıtlı Filtreler">
-            <FontAwesomeIcon icon={faThList} className="astn-btn fa-custom-icon" size="1x" />  
-          </Tooltip>
+          <Popover
+            content={<div>This is click content.</div>}
+            trigger="click"
+            title="Kayıtlı Filtreler"
+            placement="bottom"
+          >
+            <FontAwesomeIcon icon={faThList} className="astn-btn fa-custom-icon" size="1x" />
+          </Popover>
         </div>
         <div className="Search_Container">
           <FontAwesomeIcon icon={faSearch} className="astn-btn fa-custom-icon" size="lg" />
