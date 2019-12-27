@@ -1,12 +1,17 @@
 import React from 'react';
 import './styles';
-
+import { Collapse } from "antd";
 import List from '@/components/List';
 import Map from '@/components/Map';
 
 import { bayiList } from '../../../../__mocks__/db';
 
+const {Panel} = Collapse
 const Main = () => {
+
+  // const onChange = (params : any, another : any) => {
+  //   console.log(params)
+  // }
   return (
     <>
       <div className="corner"></div>
@@ -17,11 +22,15 @@ const Main = () => {
             <List.SearchResult />
           </div>
           <div className="Item_Container">
-            {
-              bayiList.map(bayi => (
-                <List.Item key={bayi._id} bayi={bayi} />
-              ))
-            }
+            <Collapse destroyInactivePanel accordion>
+              {
+                bayiList.map(bayi => (
+                  <Panel key={bayi._id} header={<List.Item  bayi={bayi} />}>
+                    <p>{bayi.adres}</p>
+                  </Panel>
+                ))
+              }
+            </Collapse>
           </div>
         </List>
         <div className="Main_Content_Controller">

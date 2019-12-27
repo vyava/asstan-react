@@ -10,6 +10,12 @@
   margin-top: 10px;
   @include custom-scroll();
 
+  & .ant-collapse-item div.ant-collapse-header {
+    padding:0;
+    line-height: initial;
+    cursor: auto;
+  }
+
   .Item {
     display: flex;
     flex-direction: row;
