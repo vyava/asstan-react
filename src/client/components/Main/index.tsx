@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles';
 
-import List from '../List';
-import Map from '../Map';
+import List from '@/components/List';
+import Map from '@/components/Map';
 
 import { bayiList } from '../../../../__mocks__/db';
 

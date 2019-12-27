@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles';
 import { Dropdown, Menu, Button, Icon } from 'antd';
-import Notification from '../Notification';
+import Notification from '@/components/Header/Notification';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCog, faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";

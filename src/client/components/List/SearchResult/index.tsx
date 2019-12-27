@@ -4,8 +4,8 @@ import { areas, ilceDetay } from "../../../../../__mocks__/db";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinusCircle, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-import ModalBox from "../../Modal";
-import SearchResultDetail from "./SearchResultDetail";
+import ModalBox from "@/components/Modal";
+import SearchResultDetail from "@/components/List/SearchResult/SearchResultDetail";
 
 
 import { Tooltip } from 'antd';

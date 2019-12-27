@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 import './style';
-import ListFilter from './ListFilter';
-import SearchResult from './SearchResult';
-import Item from './Item';
+import ListFilter from '@/components/List/ListFilter';
+import SearchResult from '@/components/List/SearchResult';
+import Item from '@/components/List/Item';
 
 interface IListProps {
   children : ReactNode;

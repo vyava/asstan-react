@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import './styles';
 import { Icon } from 'antd';
-import { IBayi } from '../../../interface/Bayi';
+import { IBayi } from '@/interface/Bayi';
 
 interface IItemProps {
   bayi: IBayi;
