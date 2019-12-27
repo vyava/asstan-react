@@ -20,6 +20,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "react", "react-hooks", "prettier"],
   rules: {
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+    '@typescript-eslint/no-explicit-any': 'off',
     "react/jsx-props-no-spreading": 0,
     "@typescript-eslint/ban-ts-ignore":0
   },
