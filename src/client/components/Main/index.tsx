@@ -5,7 +5,7 @@ import { Collapse, Skeleton } from "antd";
 import List from '@/components/List';
 import Map from '@/components/Map';
 
-import { bayiList } from '../../../../__mocks__/db';
+// import { bayiList } from '../../../../__mocks__/db';
 
 const { Panel } = Collapse
 const Main = () => {
@@ -31,7 +31,7 @@ const Main = () => {
           </div>
           <div className={classNames({"Item_Container" : true, loading : loading})}>
             <Skeleton loading={loading} active={loading} />
-            <Collapse destroyInactivePanel accordion>
+            {/* <Collapse destroyInactivePanel accordion>
               {
                 bayiList.map(bayi => (
                   <Panel key={bayi._id} header={<List.Item bayi={bayi} />}>
@@ -39,7 +39,7 @@ const Main = () => {
                   </Panel>
                 ))
               }
-            </Collapse>
+            </Collapse> */}
 
           </div>
         </List>

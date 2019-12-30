@@ -1,5 +1,5 @@
 import React from 'react';
-import { notifications as notificationData } from '../../../../../__mocks__/db';
+// import { notifications as notificationData } from '../../../../../__mocks__/db';
 import { Dropdown, List, Typography, Badge } from 'antd';
 import './style';
 
@@ -9,10 +9,10 @@ import { faBell } from "@fortawesome/free-solid-svg-icons";
 const notifications = (
   <List
     bordered
-    dataSource={notificationData}
+    // dataSource={notificationData}
     renderItem={item => (
       <List.Item>
-        <Typography.Text>{item.text}</Typography.Text>
+        {/* <Typography.Text>{item.text}</Typography.Text> */}
       </List.Item>
     )}
     header={<div>Header</div>}

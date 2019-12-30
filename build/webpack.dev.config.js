@@ -20,9 +20,11 @@ const devConfig = {
   devServer: {
     hot: true,
     inline: true,
-    proxy: {
-      '/': 'http://localhost:8082'
-    }
+    host: "0.0.0.0",
+    port: 8080
+    // proxy: {
+    //   '/': 'http://localhost:8082'
+    // }
   },
   module: {
     rules: [

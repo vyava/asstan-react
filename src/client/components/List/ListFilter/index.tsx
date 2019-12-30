@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Input, Select, Button, Tooltip, Popover } from 'antd';
 import './styles';
 
-import { locationList } from "../../../../../__mocks__/db";
+// import { locationList } from "../../../../../__mocks__/db";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faThList, faAngleDown } from "@fortawesome/free-solid-svg-icons";
@@ -11,9 +11,9 @@ let { Option } = Select;
 
 let cities: any = [];
 
-locationList.map((city) => {
-  cities.push(<Option key={city._id}>{city.name}</Option>);
-});
+// locationList.map((city) => {
+//   cities.push(<Option key={city._id}>{city.name}</Option>);
+// });
 
 const ListFilter = () => {
   let [inputFocused, setInputFocused]: [boolean, any] = useState(false);
