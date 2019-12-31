@@ -1,6 +1,9 @@
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
 
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
+
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
