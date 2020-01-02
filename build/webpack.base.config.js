@@ -26,12 +26,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.js', '.ts', '.less', '.scss', '.sass', '.css'],
-    // antd icon 
     alias: {
-      '@ant-design/icons/lib/dist$': path.resolve(
-        __dirname,
-        '../src/client/icons.js'
-      ),
       '@' : path.resolve(__dirname, '../src/client')
     }
   },
