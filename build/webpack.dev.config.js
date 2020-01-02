@@ -24,10 +24,10 @@ const devConfig = {
     port: 8080,
     watchOptions : {
       poll : true
+    },
+    proxy: {
+      '/api': 'http://localhost:7000/api'
     }
-    // proxy: {
-    //   '/': 'http://localhost:8082'
-    // }
   },
   module: {
     rules: [
